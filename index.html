@@ -4,9 +4,10 @@
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Document</title>
+ <title>Okpeku Vincent</title>
  <link rel="stylesheet" href="./styles.css">
  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+ <script src="./index.js"></script>
 </head>
 <body>
  <section id="landing">
@@ -17,13 +18,41 @@
      <p class="logo__text">Treact</p> 
     </a>
     <ul class="nav__links">
-     <li><a href="#" class="nav__link link__hover-effect">About</a></li>
-     <li><a href="#" class="nav__link link__hover-effect">Blog</a></li>
-     <li><a href="#" class="nav__link link__hover-effect">Pricing</a></li>
-     <li><a href="#" class="nav__link link__hover-effect">Contact Us</a></li>
-     <li><a href="#" class="nav__link link__hover-effect">Login</a></li>
-     <li><a href="#" class="nav__link nav__link--primary">Sign Up</a></li>
+     <li class="menu__list"><a href="#" class="nav__link link__hover-effect">About</a></li>
+     <li class="menu__list"><a href="#" class="nav__link link__hover-effect">Blog</a></li>
+     <li class="menu__list"><a href="#" class="nav__link link__hover-effect">Pricing</a></li>
+     <li class="menu__list"><a href="#" class="nav__link link__hover-effect">Contact Us</a></li>
+     <li class="menu__list"><a href="#" class="nav__link link__hover-effect">Login</a></li>
+     <li class="menu__list"><a href="#" class="nav__link nav__link--primary">Sign Up</a></li>
     </ul>
+    <button class="btn__menu" onclick="openMenu()">
+      <i class="fas fa-bars"></i>
+     </button>
+     <div class="menu__backdrop">
+      <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+       <i class="fas fa-times"></i>
+      </button>
+      <ul class="menu__links">
+       <li class="menu__list">
+        <a href="#" class="menu__link link__hover-effect" onclick="closeMenu()">About</a>
+       </li>
+       <li class="menu__list">
+        <a href="#features" class="menu__link link__hover-effect" onclick="closeMenu()">Blog</a>
+       </li>
+       <li class="menu__list">
+        <a class="menu__link link__hover-effect" onclick="closeMenu()">Pricing</a>
+       </li>
+       <li class="menu__list">
+        <a class="menu__link link__hover-effect" onclick="closeMenu()">Contact Us</a>
+       </li>
+       <li class="menu__list">
+        <a class="menu__link link__hover-effect" onclick="closeMenu()">Login</a>
+       </li>
+       <li class="menu__list">
+        <a class="menu__link special nav__link--primary" onclick="closeMenu()">Sign up</a>
+       </li>
+      </ul>
+     </div>
    </div>
   </nav>
   <header>
@@ -34,16 +63,16 @@
        <p class="about-us__para">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
        <div class="box">
          <input type="email" name="" class="input__email" placeholder="Your E-mail Address">
-         <input type="submit" name="" class="submit__email" value="Get Started">
+         <button class="about__us--button">Get Started</button>
       </div>
-       <div class="left-colmn__image-wrapper">
+       <div class="left-column__image-wrapper">
         <p class="customer__text">OUR TRUSTED CUSTOMERS</p>
         <img src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c (1).png" class="customer__img" alt="">
        </div>
      </div>
      <div class="about-us__right-column">
       <figure class="about-us__img--wrapper">
-      <img src="./assets/design-illustration-2.6da6a00b.svg" class="about-us-img" alt="">
+      <img src="./assets/design-illustration-2.6da6a00b.svg" class="about__us-img" alt="">
       </figure>
     </div>
     </div>
@@ -73,7 +102,7 @@
          <img src="./assets/support-icon.f9253ffa.svg" alt="">
         </div>
         <div class="features__feature--description">
-         <h3 class="feature__header">24/7 Support</h3>
+         <h3 class="feature__header">24/7Support</h3>
          <p class="feature__description description">Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
         </div>
       </div>
@@ -121,18 +150,18 @@
 
   <section class="Quality">
     <div class="container">
-      <div class="row__double-column">
+      <div class="row__double-column quality__double-column">
        <div class="left-column quality__left-column">
          <h5 class="purple quality-title section-title">
          QUALITY WORK
          </h5>
-         <h1 class="title quality-header">Designed &Developed by <span class="purple">Professionals.</span></h1>
+         <h1 class="title quality-header">Designed & Developed by <span class="purple">Professionals.</span></h1>
          <p class="description quality-description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
          </p>
          <a href="#" class="quality__link">Learn More</a>
        </div>
-       <div class="right-column">
+       <div class="right-column quality__right--column">
         <figure class="quality__img--wrapper">
          <img src="./assets/hero-screenshot-1.40a097b5.png" class="quality__img" alt="">
         </figure>
@@ -143,8 +172,8 @@
 
   <section class="Steps">
    <div class="container">
-     <div class="row__double-column">
-      <div class="left-column quality__left-column">
+     <div class="row__double-column steps__double-column">
+      <div class="left-column steps__left--column">
        <figure class="steps__img--wrapper">
         <img src="./assets/hero-screenshot-2.241aac1f.png" class="steps__img" alt="">
        </figure>
@@ -196,7 +225,7 @@
 
  <section class="Values">
   <div class="container">
-    <div class="row__double-column">
+    <div class="row__double-column values__double-column">
      <div class="left-column quality__left-column">
        <h5 class="purple quality-title section-title">
        VALUES
@@ -235,7 +264,7 @@
        </div>
        <a href="#" class="values__link">Learn More</a>
       </div>
-     <div class="right-column">
+     <div class="right-column values__left-column">
       <figure class="values__img--wrapper">
        <img src="./assets/prototype-illustration.21bc4b3f.svg" class="values__img" alt="">
       </figure>
@@ -325,7 +354,7 @@
 
 <section class="testimonials">
  <div class="container">
-   <div class="row__double-column">
+   <div class="row__double-column testimonials__double-column">
     <div class="left-column testimonials__left-column">
      <figure class="steps__img--wrapper">
       <img src="./assets/love-illustration.c759090f.svg" class="steps__img" alt="">
