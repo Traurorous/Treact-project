@@ -223,7 +223,7 @@ NAVIGATION
  top: 32px;
  left: 32px;
  right: 32px;
- bottom: 316px;
+ bottom: 280px;
  z-index: 100;
  border-radius: 10px;
  border: 1px solid rgb(218, 216, 216);
@@ -1069,6 +1069,10 @@ FOOTER
  cursor: pointer;
 }
 
+.copyright{
+ text-align: center;
+}
+
 /* finishing this was real hectic, have no idea how I finished, but I did. Now to make it responsive ToT =] */
 
 
@@ -1190,10 +1194,6 @@ Tablets and Large Phones
 
  .btn__menu {
   display: block;
- }
-
- .menu__link{
-
  }
 
  .special{
@@ -1413,6 +1413,19 @@ Tablets and Large Phones
 
  .footer__copyright{
   margin: 24px 0;
+ }
+
+ .contact--us,
+ .get--started{
+  text-align: center;
+ }
+
+ .links--column{
+  margin-top: 24px;
+ }
+
+ .get__started--text{
+  font-size: 24px;
  }
 
 }
